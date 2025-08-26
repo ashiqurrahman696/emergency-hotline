@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emergency Hotline</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+        @import 'tailwindcss';
+        @theme{
+            --font-inter: "Inter", sans-serif;
+        }
+    </style>
+</head>
+<body class="font-[Arial]">
+    <header class="p-4 shadow">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <img src="assets/logo.png" alt="logo" class="w-16">
+                <h4 class="text-2xl font-bold text-[#006747]">Emergency<br>Service</h4>
+            </div>
+            <div class="flex gap-4">
+                <div class="flex items-center gap-2 bg-[#ecfff0] px-6 py-2 rounded-full">
+                    <span id="heart-count" class="text-xl font-extrabold font-inter">0</span>
+                    <img src="assets/heart.png" alt="Heart" class="w-8">
+                </div>
+                <div class="flex items-center gap-2 bg-[#ecfff0] px-6 py-2 rounded-full">
+                    <span id="coin-count" class="text-xl font-extrabold font-inter">100</span>
+                    <img src="assets/coin.png" alt="Heart" class="w-8">
+                </div>
+                <div class="flex items-center gap-2 bg-[#00a63e] px-6 py-2 rounded-full">
+                    <span class="text-xl text-white"><span id="copy-count">2</span> Copy</span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <script src="script.js"></script>
+</body>
+</html>
