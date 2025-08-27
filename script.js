@@ -87,7 +87,7 @@ for(let hotline of hotlineNumbers){
                     <i class="fa-regular fa-heart text-xl cursor-pointer"></i>
                 </div>
                 <h4 class="text-2xl font-hind-madurai font-bold text-[#111]">${hotline.head}</h4>
-                <p class="text-[18px] text-[#5c5c5c]">${hotline.subhead}</p>
+                <p class="text-[18px] text-[#5c5c5c] font-roboto">${hotline.subhead}</p>
                 <h3 class="text-3xl font-bold font-sans text-[#111]">${hotline.number}</h3>
                 <span class="bg-[#f2f2f2] py-3 px-5 rounded-full inline-block my-2 text-[#5c5c5c]">${hotline.category}</span>
                 <div class="grid grid-cols-2 gap-2">
