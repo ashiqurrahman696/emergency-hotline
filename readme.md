@@ -125,7 +125,7 @@ Ans:
 Ans: It is a method propagating across parent elements, the event triggered on a child element eventually reaches the root element. This is how the browser works by default.
 
 ### 4. What is **Event Delegation** in JavaScript? Why is it useful?
-Ans: It is a technique to handle events efficiently. Instead of attaching individual event listeners to each element, it involves adding a single event listener to a parent element. It simplifies code maintenance for dynamically added new elements by making code more cleaner and manageable.
+Ans: It is a technique for efficiently overseeing occurrences. Instead of adding distinct event listeners to each element, it involves adding a single event listener to a parent element. It simplifies code maintenance for dynamically added new elements by making code more clean, readable, easy to handle.
 
 
 ### 5. What is the difference between **preventDefault() and stopPropagation()** methods?
