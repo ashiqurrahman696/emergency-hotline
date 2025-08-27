@@ -129,7 +129,7 @@ Ans: Event Delegation is a method for effectively managing events. It entails ad
 
 
 ### 5. What is the difference between **preventDefault() and stopPropagation()** methods?
-Ans: The "preventDefault()" function stops an element from doing something, like submitting a form or going to a new page when clicked on a link. The `stopPropagation()` function stops an event from moving up or down the DOM Tree, which stops parent or child elements from handling the same event.
+Ans: The `preventDefault()` function stops an element from doing something, like submitting a form or going to a new page when clicked on a link. The `stopPropagation()` function stops an event from moving up or down the DOM Tree, which stops parent or child elements from handling the same event.
 
 ---
 
