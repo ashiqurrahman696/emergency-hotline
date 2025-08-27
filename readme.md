@@ -110,11 +110,26 @@ You have to create a `Readme.md` file. and write down following questions. Dont 
 
 ### 6. Answer the following questions clearly:
 
-1. What is the difference between **getElementById, getElementsByClassName, and querySelector / querySelectorAll**?
-2. How do you **create and insert a new element into the DOM**?
-3. What is **Event Bubbling** and how does it work?
-4. What is **Event Delegation** in JavaScript? Why is it useful?
-5. What is the difference between **preventDefault() and stopPropagation()** methods?
+#### 1. What is the difference between **getElementById, getElementsByClassName, and querySelector / querySelectorAll**?
+
+Ans: **getElementById** returns single element based on a unique ID attribute. **getElementsByClassName** selects all elements of a that contains specified class name. **querySelector** returns first element matching CSS selector. **querySelector** returns NodeList of elements matching CSS selector.
+
+### 2. How do you **create and insert a new element into the DOM**?
+Ans:
+1. Create a new element using `document.creteElement('element_name')` Example: `document.creteElement('div')`.
+2. (Optional) Set attribute of an element using `element.setAttribute('property_name', 'value')`. Example: `myElement.setAttribute('title', 'This is my element')`.
+3. Select it's parent using `document.getElementById('id')`.
+4. Insert newly created element to parent element using `parentElement.appendChild(newElement)`.
+
+### 3. What is **Event Bubbling** and how does it work?
+Ans: It is a method propagating across parent elements, the event triggered on a child element eventually reaches the root element. This is how the browser works by default.
+
+### 4. What is **Event Delegation** in JavaScript? Why is it useful?
+Ans: It is a technique to handle events efficiently. Instead of attaching individual event listeners to each element, it involves adding a single event listener to a parent element. It simplifies code maintenance for dynamically added new elements by making code more cleaner and manageable.
+
+
+### 5. What is the difference between **preventDefault() and stopPropagation()** methods?
+Ans: `preventDefault()` stops action of element from navigating to a page. `stopPropagation()` stops event from bubbling up trickling down the DOM Tree.
 
 ---
 
