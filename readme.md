@@ -129,7 +129,7 @@ Ans: It is a technique for efficiently overseeing occurrences. Instead of adding
 
 
 ### 5. What is the difference between **preventDefault() and stopPropagation()** methods?
-Ans: `preventDefault()` stops action of element from navigating to a page. `stopPropagation()` stops event from bubbling up trickling down the DOM Tree.
+Ans: `preventDefault()` stops action of element from navigating to a page. `stopPropagation()` stops event from bubbling up or trickling down the DOM Tree.
 
 ---
 
