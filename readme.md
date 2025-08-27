@@ -122,7 +122,7 @@ Ans:
 4. Insert newly created element to parent element using `parentElement.appendChild(newElement)`.
 
 ### 3. What is **Event Bubbling** and how does it work?
-Ans: It is a method propagating across parent elements, the event triggered on a child element eventually reaches the root element. This is how the browser works by default.
+Ans: It is a method propagating across parent elements. The event triggered on a child element eventually reaches the root element. This is how the browser works by default.
 
 ### 4. What is **Event Delegation** in JavaScript? Why is it useful?
 Ans: It is a technique for efficiently overseeing occurrences. Instead of adding distinct event listeners to each element, it involves adding a single event listener to a parent element. It simplifies code maintenance for dynamically added new elements by making code more clean, readable, easy to handle.
