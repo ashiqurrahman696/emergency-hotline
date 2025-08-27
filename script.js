@@ -104,6 +104,15 @@ function createHistory(hotlineName, hotlineNumber) {
     `;
 }
 
+let clearHistoryBtn = getById("clear-history-btn");
+
+function clearHistory(){
+    let callHistoryEl = getById("call-history");
+    callHistoryEl.innerHTML = "";
+}
+
+clearHistoryBtn.addEventListener('click', clearHistory);
+
 function callEmergency(hotlineName, hotlineNumber){
     if(coinCount < 20){
         alert("You don't have sufficient coin! To make call, you need at least 20 coins.");
