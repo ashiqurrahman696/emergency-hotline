@@ -113,6 +113,16 @@ function clearHistory(){
 
 clearHistoryBtn.addEventListener('click', clearHistory);
 
+let copyCount = 0;
+let copyCountEl = getById("copy-count");
+
+function copyNumber(number){
+    copyCount++;
+    copyCountEl.innerHTML = copyCount;
+    navigator.clipboard.writeText(number);
+    alert(`Number copied: ${number}`)
+}
+
 function callEmergency(hotlineName, hotlineNumber){
     if(coinCount < 20){
         alert("You don't have sufficient coin! To make call, you need at least 20 coins.");
@@ -137,7 +147,7 @@ for(let hotline of hotlineNumbers){
                 <h3 class="text-3xl font-bold font-sans text-[#111]">${hotline.number}</h3>
                 <span class="bg-[#f2f2f2] py-3 px-5 rounded-full inline-block my-2 text-[#5c5c5c]">${hotline.category}</span>
                 <div class="grid grid-cols-2 gap-2">
-                    <button type="button" class="border border-[#d4d6d5] rounded-lg p-2 cursor-pointer text-[#5c5c5c] duration-300 hover:border-black hover:bg-black hover:text-white"><i class="fa-regular fa-clone"></i> Copy</button>
+                    <button type="button" onclick="copyNumber('${hotline.number}')" class="border border-[#d4d6d5] rounded-lg p-2 cursor-pointer text-[#5c5c5c] duration-300 hover:border-black hover:bg-black hover:text-white"><i class="fa-regular fa-clone"></i> Copy</button>
                     <button type="button" onclick="callEmergency(
                     '${hotline.head}', '${hotline.number}');" class="bg-[#00a63e] rounded-lg p-2 cursor-pointer text-white duration-300 hover:bg-[#d4d6d5] hover:text-white"><i class="fa-solid fa-phone"></i> Call</button>
                 </div>
