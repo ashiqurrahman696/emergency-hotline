@@ -87,8 +87,22 @@ function increaseHeart(){
 }
 
 let coinCount = 100;
-let coinCOuntEl = getById("coin-count");
+let coinCountEl = getById("coin-count");
 
+function createHistory(hotlineName, hotlineNumber) {
+    let callHistoryEl = getById("call-history");
+    callHistoryEl.innerHTML += `
+        <div class="bg-neutral-50 p-4 rounded-2xl flex justify-between items-center">
+            <div>
+                <p class="text-[18px] font-semibold text-[#111]">${hotlineName}</p>
+                <p class="font-hind-madurai text-[18px] text-[#5c5c5c]">${hotlineNumber}</p>
+            </div>
+            <div>
+                <p class="font-hind-madurai text-[18px] text-right text-[#383838]">${new Date().toLocaleTimeString()}</p>
+            </div>
+        </div>
+    `;
+}
 
 function callEmergency(hotlineName, hotlineNumber){
     if(coinCount < 20){
@@ -96,8 +110,9 @@ function callEmergency(hotlineName, hotlineNumber){
         return;
     }
     coinCount -= 20;
-    coinCOuntEl.innerText = coinCount;
+    coinCountEl.innerText = coinCount;
     alert(`📞 Calling ${hotlineName} ${hotlineNumber}...`);
+    createHistory(hotlineName, hotlineNumber);
 }
 
 for(let hotline of hotlineNumbers){
