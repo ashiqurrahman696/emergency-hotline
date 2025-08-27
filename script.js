@@ -125,7 +125,7 @@ function copyNumber(number){
 
 function callEmergency(hotlineName, hotlineNumber){
     if(coinCount < 20){
-        alert("You don't have sufficient coin! To make call, you need at least 20 coins.");
+        alert("❌ You don't have sufficient coin! To make call, you need at least 20 coins.");
         return;
     }
     coinCount -= 20;
