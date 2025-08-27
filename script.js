@@ -139,7 +139,7 @@ for(let hotline of hotlineNumbers){
         <div class="card w-full bg-base-100 shadow-sm">
             <div class="p-4">
                 <div class="flex justify-between items-center">
-                    <img src="assets/${hotline.icon}.png" alt="Emergency" class="${hotline.iconBg} size-14 p-3 rounded-2xl mb-2">
+                    <img src="assets/${hotline.icon}.png" alt="${hotline.head}" class="${hotline.iconBg} size-14 p-3 rounded-2xl mb-2">
                     <i class="fa-regular fa-heart text-xl cursor-pointer" onclick="increaseHeart();"></i>
                 </div>
                 <h4 class="text-2xl font-hind-madurai font-bold text-[#111]">${hotline.head}</h4>
