@@ -112,7 +112,7 @@ You have to create a `Readme.md` file. and write down following questions. Dont 
 
 #### 1. What is the difference between **getElementById, getElementsByClassName, and querySelector / querySelectorAll**?
 
-Ans: **getElementById** returns single element based on a unique ID attribute. **getElementsByClassName** selects all elements of a that contains specified class name. **querySelector** returns first element matching CSS selector. **querySelector** returns NodeList of elements matching CSS selector.
+Ans: **getElementById** returns single element based on a unique ID attribute. **getElementsByClassName** returns HTMLCollection of element that have specified class name. **querySelector** returns first element matching CSS selector. **querySelector** returns NodeList of elements matching CSS selector.
 
 ### 2. How do you **create and insert a new element into the DOM**?
 Ans:
