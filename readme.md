@@ -1,4 +1,4 @@
-#### 1. What is the difference between **getElementById, getElementsByClassName, and querySelector / querySelectorAll**?
+### 1. What is the difference between **getElementById, getElementsByClassName, and querySelector / querySelectorAll**?
 
 Ans: **getElementById** returns a single element based on a unique ID attribute; **getElementsByClassName** returns an HTMLCollection of elements with a specified class name; **querySelector** returns the first element that matches the CSS selector; and **querySelector** returns a NodeList of elements that match the CSS selector.
 
